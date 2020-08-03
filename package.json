@@ -2,9 +2,11 @@
   "name": "clipboard-event",
   "version": "1.0.1",
   "description": "Clipboard change event for Node.js/Electron.js/NW.js",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/sudhakar3697/node-clipboard-event/issues"
   },
-  "homepage": "https://github.com/sudhakar3697/node-clipboard-event#readme"
+  "homepage": "https://github.com/sudhakar3697/node-clipboard-event#readme",
+  "devDependencies": {
+    "@types/node": "14.0.27",
+    "typescript": "3.9.7"
+  }
 }
